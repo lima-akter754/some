@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+@import url(./partial/media.css);
+*{
+   font-family: 'Poppins', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   text-decoration: none;
+   outline: none; border:none;
+   text-transform: capitalize;
+   transition: all .2s linear;
+ }
+
+ $blue : #0984e3;
+ $black : #333;
+ $white : #fff;
+ $gold : gold;
+ $light-color : #666;
+ $red : #fa0a0a;
+ $border : .2rem solid $black;
+ $box-shadow : 0 .5rem 1rem rgba(0,0,0,.2);
+
+
+// ********** details start ********
+
+ .details-section{
+       display: grid;
+       grid-gap: 10px;
+       grid-template-columns:repeat(2,1fr); 
+
+
+}
+
+
+.box-container{
+
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 10px;
+  grid-template-rows: repeat(2,1fr); 
+  align-items: center;
+  justify-content: center;
+  
+
+
+  .box{
+  
+  border-radius: .5rem;
+  text-align: start;
+  background:rgba(8, 8, 8, 0.05);
+  padding:1.9rem;
+  cursor: pointer;
+
+
+  i{
+    color:#333;
+    font-size: 2rem;
+    padding:1rem;
+            }
+
+
+    h4{
+      display: inline;
+      color:#333;
+      font-size: 1.3rem;
+
+
+   p{
+   color:#333;
+   font-size: 1.1rem;
+   padding:2rem
+  
+
+  //  :hover{
+  //  background:#fff;
+
+
+// // //  :hover > *{
+// // //   color:#333;
+
+     }
+    }
+   }
+  }
+ 
+
+
+  
+
+
+ //********* faq start *******
+
+ .faq{
+  
+   .accordion-container{
+     max-width: 100%;
+     margin:0 auto;
+   
+
+     .accordion{
+       background: $white;
+       margin-bottom: 1.5rem;
+       box-shadow: $box-shadow;
+
+       &:last-child{
+         margin-bottom: .5rem;
+       }
+
+       &.active{
+
+         .accordion-heading{
+           background: $blue;
+
+           i{
+             transform: rotate(180deg);
+           }
+         }
+
+         .accordioin-content{
+           display: block;
+        
+         }
+       }
+       .accordion-heading{
+           padding:2rem;
+           display: flex;
+           align-items: center;
+           gap:1rem;
+           justify-content: space-between;
+           background: $light-color;
+           cursor: pointer;
+        
+      h4{
+          font-size: 1.1rem;
+          color:$white;
+                       
+        
+        }
+                 
+        i{
+          font-size: 1rem;
+          color:$white;
+
+
+         }
+       }
+     }
+
+     .accordioin-content{
+       padding:2rem;
+       font-size: 1rem;
+       line-height: 2;
+       color:$light-color;
+       display: none;
+       animation:fadeIn .2s linear;
+     }
+   }
+  }
+ 
+
+// ******** faq end *********
+
+
+
+ /************ Start Brand Area *************/ 
+
+ .brand-area{
+    margin: 1rem;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    h3{
+   text-align: center;
+   padding-bottom: 2rem;
+ }
+ span{
+   color: $red;
+ }
+  }
+ .brand-area.container-fluid .first-row .single-brand {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(2, 1fr);
+    
+ }
+  
+ .brand-area .first-row  .single-brand{
+    border: .1rem solid $black;
+    text-align: center;
+    // padding: 4rem 0rem;
+    // margin: .9rem 0;
+    width: 150px;
+    height:100px ;
+    cursor: pointer;
+}
+
+.brand-area .first-row  .single-brand > img{
+    width: 100%;
+    height: auto;
+}
+
+
+/******** End Brand Area ********/
+
+
+/******** before footer Area start ********/
+.before-footer-stick{
+  padding: 3rem;
+  .shop-footer-features{
+    i{
+      font-size: 2rem;
+    }
+    a{
+      text-decoration: none;
+      color: $black;
+    }
+    h5{
+      display: inline;
+      color:$white;
+      font-size: 1rem;
+    }
+  }
+}
+
+/******** before footer Area end ********/ 
+
+
+
+/******** footer Area start ********/ 
+.footer{
+  padding: 6rem;
+  strong{
+    color: $light-color;
+    font-size: .9rem;
+  }
+  p{
+    font-size: .9rem;
+  }
+  input {
+    font-size: .7rem;
+    margin-right: 15px;
+    border: $box-shadow;
+  }
+  button{
+    font-size: .7rem;
+    border-radius: 5px;
+    color: $white;
+    padding:.135rem 2rem;
+    background: rgba(10, 10, 10, 0.904);
+  }
+  
+  .container{
+    .footer-widgets-wrap{
+      .widget{
+        h4{
+          font-size: .99rem;
+          // padding: rem;
+        }
+        ul{
+          li{
+            text-decoration: none;
+            a{
+              text-decoration: none;
+              font-size: .9rem;
+              color: $light-color;
+            }
+            
+          }
+        }
+      }
+    }
+  }
+  .copyrights{
+     padding-top: 1rem;
+    .container{
+      .row{
+        font-size: .9rem;
+        padding:3rem 0rem;
+        .copyright-links{
+          a{
+          color: $light-color;
+          padding: 1rem 1rem;
+          font-size: .8rem;
+          text-decoration: dashed;
+        }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+/******** footer Area end ********/ 

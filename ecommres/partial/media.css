@@ -1,0 +1,55 @@
+/* if the viewport is equal to 340px or less than that */ 
+@media only screen and (max-width: 340px){
+    .details-section{
+       display: grid;
+       grid-gap: 5px;
+       grid-template-columns:1fr 1fr;
+     
+    }
+
+
+
+
+.box-container{
+  display: grid;
+  grid-template-rows:1fr; 
+  align-items: center;
+  justify-content: center; 
+
+  } 
+} 
+ 
+
+
+
+/* if the viewport is equal to 340px or less than that */ 
+@media only screen and (max-width: 792px){
+    
+
+    .details-section{
+       background: #333;
+       display: grid;
+       grid-gap: 6px;
+       grid-template-columns:1fr; 
+
+
+}
+
+
+.box-container{
+  grid-template-columns:1fr;
+  grid-gap: 6px;
+  grid-template-rows:1fr; 
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  
+
+ }
+}
+
+/* if the viewport is equal to 1910px or less than that */ 
+@media only screen and (max-width: 1910px){
+
+
+}
